@@ -51,10 +51,11 @@ def get_conversational_chain():
         - **"👍"** for scores between 60% to 80%,  
         - **"🔥"** for scores between 81% to 99%,  
         - **"👏"** for a score of 100%.  
-        Present the score in **bold** and **underlined** format along with the respective marker.  
+        Present the score in **bold** format along with the respective marker.  
     3. Identify the skills that are missing in the CV but are required according to the job description. Provide clear and specific suggestions for improving those skills. For each lacking skill, recommend at least 2 relevant YouTube videos with their titles and thumbnails.  
-    4. End the response with a randomly selected motivational quote related to success and hard work.  
-    5. If the input is not a valid job description, respond politely by suggesting the user provide a valid job description, without giving an irrelevant answer.  
+    4. Suggest hands-on experiences project ideas and opportunities like internships and workshops for relevant skills.
+    5. End the response with a randomly selected motivational quote related to success and hard work.  
+    6. If the input is not a valid job description, respond politely by suggesting the user provide a valid job description, without giving an irrelevant answer.  
 
     Answer the question while adhering to these guidelines. If the required information is not available in the provided context, state: "Answer is not available in the context."
     \n\n
@@ -94,24 +95,6 @@ def user_input(user_question):
 
 
 
-# def main():
-#     st.set_page_config("Personal Project Management")
-#     st.header("Personal Project Management by resume")
-
-#     user_question = st.text_area("Provide Job description")
-
-#     if user_question:
-#         user_input(user_question)
-
-#     with st.sidebar:
-#         st.title("Menu:")
-#         pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
-#         if st.button("Submit & Process"):
-#             with st.spinner("Processing..."):
-#                 raw_text = get_pdf_text(pdf_docs)
-#                 text_chunks = get_text_chunks(raw_text)
-#                 get_vector_store(text_chunks)
-#                 st.success("Done")
 
 def main():
     st.set_page_config("Personal Project Management")
