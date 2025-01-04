@@ -9,7 +9,9 @@ Personal Project Management Website
    $ pip install -r requirements.txt
    ```
 
-2. Run the app
+2. create a ".env" file to store gemini api key.
+
+3. Run the app
 
    ```
    $ streamlit run streamlit_app.py
